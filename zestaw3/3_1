@@ -1,0 +1,31 @@
+3.1
+a)x = 2; y = 3;
+if (x > y):
+    result = x;
+else:
+    result = y;
+
+b)for i in "axby": if ord(i) < 100: print (i)
+
+c)for i in "axby": print (ord(i) if ord(i) < 100 else i)
+
+
+Ad a) Kod jest poprany składniowo, chociaż niepotrzebnie zostały użyte średniki.
+W Pythonie używamy średników, gdy chcemy oddzielić instrukcje zapisane w jednej linii.
+
+Ad b) Podany kod powoduje SyntaxError: invalid syntax.
+
+Przykład poprawionego kodu:
+for i in "axby":
+    if ord(i) < 100:
+        print (i)
+
+Przeniosłam instrukcje po dwukropkach do kolejnych linii, zachwoując odpowiednie wcięcia,
+które pokazują, które instrukcje mają zostać wykonane w pętli for oraz co ma się stać jeśli
+zachodzi warunek if.
+
+
+Ad c) Kod jest poprawny składniowo i wykonuje się poprawnie.
+
+
+
