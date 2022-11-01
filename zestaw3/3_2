@@ -1,0 +1,38 @@
+3.2
+a)L = [3, 5, 4] ; L = L.sort()
+
+b)x, y = 1, 2, 3
+
+c)X = 1, 2, 3 ; X[1] = 4
+
+d)X = [1, 2, 3] ; X[3] = 4
+
+e)X = "abc" ; X.append("d")
+
+f)L = list(map(pow, range(8)))
+
+Ad a) Kod wykonuje się poprawnie. Możnaby umieścić instrukcje w dwóch liniach,
+co nie wymagałoby użycia średnika oraz dodać instrukcję print w celu sprawdzenia
+działania wykonywanej instrukcji sort().
+
+Ad b) Kod powoduje błąd - ValueError: too many values to unpack (expected 2).
+Jest to spowodowane próbą przypisania zbyt wielu wartości - mamy 2 zmienne i 3 wartości.
+
+Ad c) Kod powoduje błąd - TypeError: 'tuple' object does not support item assignment.
+W kodzie najpierw deklarujemy krotkę z konkretnymi wartościami, a następnie chcemy zmienić
+wartość w środku krotki, a jest to niedozwolona operacja.
+
+Ad d) Kod powoduje błąd - IndexError: list assignment index out of range.
+W kodzie najpierw tworzymy listę, a następnie próbujemy przypisać wartość o indeksie
+większym niż istniejące, co powoduje błąd. Aby dodać nowy element do listy możemy
+skorzystać z metody append().
+
+Ad e) Kod powoduje błąd - AttributeError: 'str' object has no attribute 'append'.
+Zmienne typu string nie obsługują metody append(). Aby dodać literę "d" do zmiennej
+wystarczy zmienić kod do postaci:
+X = "abc"
+X+= "d"
+
+Ad f) Kod powoduje błąd - TypeError: pow() missing required argument 'exp' (pos 2).
+W podanym kodzie, funkcja pow() nie ma podanych argumentów, co skutkuje błędem.
+Składnia: pow(number, power, modulus [optional]).
