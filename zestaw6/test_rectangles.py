@@ -14,8 +14,8 @@ class TestRectangle(unittest.TestCase):
 		self.assertEqual(self.rect2.__repr__(), "Rectangle(1, 2, 3, 4)")
 
 	def test_eq(self):
-		self.assertEqual(self.rect2 == self.rect2, True)
-		self.assertEqual(self.rect2 == self.rect1, False)
+		self.assertTrue(self.rect2 == self.rect2)
+		self.assertTrue(self.rect2 != self.rect1)
 
 	def test_center(self):
 		self.assertEqual(self.rect1.center(), Point())
