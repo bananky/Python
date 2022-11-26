@@ -2,8 +2,14 @@ import itertools
 import random
 
 #a
-print(itertools.cycle('0 1'))
+iter1 = itertools.cycle(["0","1"])
+for i in iter1:
+    print(i,end=", ")
 #b
-print(iter(random.choice(("N", "E", "S", "W")) ))
+iter2 = iter(lambda:random.choice(["N", "E", "S", "W"]),0 )
+for i in iter2:
+    print(i, end=", ")
 #c
-print(itertools.cycle(range(0,7)))
+iter3 = itertools.cycle(range(0,7))
+for i in iter3:
+    print(i, end=", ")
