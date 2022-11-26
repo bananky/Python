@@ -3,7 +3,7 @@ from rectangles import *
 
 class TestRectangle(unittest.TestCase):
 	def setUp(self):
-		self.rect1 = Rectangle()
+		self.rect1 = Rectangle(3,5,4,8)
 		self.rect2 = Rectangle(1, 2, 3, 4)
 		self.rect3 = Rectangle(3, 4, 0, -2)
 

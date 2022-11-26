@@ -1,10 +1,11 @@
-from points import Point
+from zestaw6.points import Point
 
 class Rectangle:
     """Klasa reprezentująca prostokąty na płaszczyźnie."""
 
     def __init__(self, x1, y1, x2, y2):
-    # Chcemy, aby x1 < x2, y1 < y2.
+        if x1 >= x2 or y1 >= y2:
+            raise ValueError("Must be: x1 < x2 and y1 < y2")
         self.pt1 = Point(x1, y1)
         self.pt2 = Point(x2, y2)
 
