@@ -139,10 +139,4 @@ class DoubleList:
         self.head.data = None
         self.head = None
 
-    def show(self):
-        curr = self.head
-        while curr:
-            print(curr.data, end=" ")
-            curr = curr.next
-        print()
 
