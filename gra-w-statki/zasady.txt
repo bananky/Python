@@ -1,0 +1,18 @@
+Planszą jest kwadrat postaci 10 x 10 kratek.
+
+Na planszy zostało ukrytych 5 statków o różnych długościach:
+- Carrier o długości 5 kratek (jeden taki statek na planszy),
+- Battleship o długości 4 kratek (jeden taki statek na planszy),
+- Cruiser o długości 3 kratek (dwa takie statki na planszy),
+- Destroyer o długości 2 kratek (jeden taki statek na planszy).
+
+Statki mogą być ułożone pionowo jak i poziomo, ale nie mogą do siebie przylegać.
+
+Aby sprawdzić, czy w konkretnej kratce znajduje się statek, wystarczy najechać kursorem na kratkę i kliknąć. Jeśli kratka jest pusta,
+zostanie wyświetlony komunikat "PUDŁO", a kratka zmieni kolor na niebieski. Jeśli udało nam się trafić, kratka zmieni kolor na
+czerowny, a komunikat o treści "TRAFIONY" zostanie wyświetlony. Gdy uda nam się trafić wszystkie kratki składające się na jeden statek,
+zostanie wyświetlony kominikat "TRAFIONY-ZATOPIONY".
+
+Na każdym etepie pozostała liczba statków do zatopienia jest wyświetlana.
+
+Naszym celem jest znalezienie wszystkich statków.
